@@ -5,7 +5,7 @@ var response;
 
 app.get('/', function (req, res) {
 
-    response = 'This is version 2 of the app.' + '\n';
+    response = 'This is version 3 of the app.' + '\n';
 
     //send the response to the client
     res.send(response);
@@ -15,3 +15,7 @@ app.get('/', function (req, res) {
 app.listen(8080, function () {
   console.log('Server listening on port 8080...');
 });
+
+oc delete pods version-5446bcc944-wmp9b 
+oc delete pods version-5446bcc944-zdsjn
+oc delete pods version-5446bcc944-zqxtv 
